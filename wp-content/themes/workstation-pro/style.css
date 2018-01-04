@@ -225,39 +225,6 @@ a:focus {
 	color: #ff4800;
 }
 
-a.link-angle:before {
-	font-family: FontAwesome;
-	padding-right: 7px;
-}
-
-a.link-angle {
-	border-bottom: 0;
-	font-weight: 900;
-	color: #ff4800;
-}
-
-a.link-angle:hover {
-	color: #222;
-}
-
-a.link-angle:hover:after {
-	margin-left: 20px;
-} 
-
-a.link-angle:after {
-	content: '\f105';
-	color:#ff4800;
-    font-family: 'Font Awesome 5 Solid';
-    font-size: 18px;
-    font-size: 1.8rem;
-    margin-left: 10px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 p {
 	margin: 0 0 28px;
 	padding: 0;
@@ -362,6 +329,14 @@ h2 {
 h3 {
 	font-size: 28.1px;
 	font-size: 2.81rem;
+}
+
+h3:before {
+	font-family: 'FontAwesome';
+	content: '\f004';
+	margin-right: .25em;
+	color: #DA1A30;
+	letter-spacing: -.1em;
 }
 
 h4 {
@@ -1008,6 +983,57 @@ img.alignright,
 	margin: 0 0 28px;
 }
 
+/* WordPress Image Styling via wpfill.me */
+.alignleft {
+    float: left;
+    margin:0 15px 30px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+.alignright {
+    float: right;
+    margin:0 0 30px 15px;
+}
+.alignnone {
+    float: none;
+    display:block;
+    margin:0 0 30px 0;
+}
+.size-full {
+    width:100%;
+    height:auto;
+    margin:0 0 30px 0;
+}
+p .alignleft {
+    float: left;
+    margin:5px 15px 30px 0;
+}
+p .aligncenter {
+    display: block;
+    margin: 5px auto 30px auto;
+}
+p .alignright {
+    float: right;
+    margin:5px 0 30px 15px;
+}
+p .alignnone {
+    float: none;
+    display:block;
+    margin:5px 0 30px 0;
+}
+p .size-full {
+    width:100%;
+    height:auto;
+    margin:5px 0 30px 0;
+}
+
+a.imgwrap,
+a.imgwrap:hover {
+    border:none;
+    background:none;
+}
 
 /* Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -1295,7 +1321,6 @@ a:focus {
 
 /* Site Navigation
 ---------------------------------------------------------------------------------------------------- */
-
 .genesis-nav-menu {
 	clear: both;
 	line-height: 1;
@@ -1321,35 +1346,13 @@ a:focus {
 
 .genesis-nav-menu > li.menu-item-has-children > a:focus,
 .genesis-nav-menu > li.menu-item-has-children > a:hover {
-	/*border-color: transparent;*/
-	content: "\f106";
-    opacity: 0;
-    font-family: FontAwesome;
-    font-size: 20px;
-    color: #222;
-    margin-top: -23px;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 0;
+	border-color: transparent;
 }
 
 .genesis-nav-menu > .current-menu-item > a,
 .genesis-nav-menu > li > a:focus,
 .genesis-nav-menu > li > a:hover {
 	border-bottom: 2px solid #ff4800;
-	content: "\f106";
-    opacity: 0;
-    font-family: FontAwesome;
-    font-size: 20px;
-    color: #222;
-    margin-top: -23px;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 0;
 }
 
 .genesis-nav-menu .sub-menu a:focus,
