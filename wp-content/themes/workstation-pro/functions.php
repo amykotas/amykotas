@@ -49,8 +49,7 @@ define( 'CHILD_THEME_VERSION', '1.1.3' );
 add_action( 'wp_enqueue_scripts', 'workstation_enqueue_scripts_styles' );
 function workstation_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400', array(), CHILD_THEME_VERSION );
-
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -62,12 +61,6 @@ function workstation_enqueue_scripts_styles() {
 	);
 
 }
-
-// Enqueues our locally supplied Font Awesome stylesheet
-function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/fontawesome-all.css'); 
-}
-add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 // Setup our responsive menu settings.
 function workstation_responsive_menu_settings() {
@@ -332,10 +325,3 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Flexible Footer', 'workstation-pro' ),
 	'description' => __( 'This is the footer section.', 'workstation-pro' ),
 ) );
-
-// Stop images being wrapped in <p> tags.
-// credit http://www.wpfill.me/
-function filter_ptags_on_images($content){
-	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-}
-add_filter('the_content', 'filter_ptags_on_images');
