@@ -404,7 +404,7 @@ textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
 	color: #222;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -444,7 +444,7 @@ input[type="submit"],
 	border: 0;
 	color: #fff;
 	cursor: pointer;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	letter-spacing: 1px;
@@ -747,7 +747,7 @@ th {
 --------------------------------------------- */
 
 .breadcrumb {
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	letter-spacing: 2px;
@@ -841,7 +841,7 @@ th {
 .page-title,
 .widget-title {
 	color: #ff4800;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	letter-spacing: 2px;
@@ -967,7 +967,7 @@ img.alignright,
 
 .widget .list li {
 	border-bottom: 1px dotted #ddd;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1136,7 +1136,7 @@ img.alignright,
 }
 
 .site-title {
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 24px;
 	font-size: 2.4rem;
 	font-weight: 300;
@@ -1340,7 +1340,7 @@ img.alignright,
 
 .nav-secondary {
 	background-color: #222;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .nav-secondary .genesis-nav-menu a {
@@ -1544,7 +1544,7 @@ img.alignright,
 --------------------------------------------- */
 
 p.entry-meta {
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-bottom: 0;
@@ -1597,7 +1597,7 @@ p.entry-meta {
 }
 
 .archive-pagination li a {
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	color: #222;
 	cursor: pointer;
 	display: inline-block;
@@ -1647,7 +1647,7 @@ p.entry-meta {
 .comment-meta,
 .entry-comments .comment-header,
 .entry-comments .comment-reply {
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-weight: 300;
 }
 
@@ -1679,7 +1679,7 @@ p.entry-meta {
 .footer-widgets {
 	background-color: #222;
 	clear: both;
-	/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -1717,7 +1717,7 @@ p.entry-meta {
 .site-footer {
 	background-color: #222;
 	color: #fff;
-	/*/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",      sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -1964,7 +1964,7 @@ p.entry-meta {
 	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
 		border: none;
 		color: #fff;
-		/*font-family: 'Karla', sans-serif;*/ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 		margin-top: 1px;
 		padding: 20px;
 		width: 100%;
