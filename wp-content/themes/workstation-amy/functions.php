@@ -287,6 +287,15 @@ function workstation_widget_area_class( $id ) {
 
 }
 
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>Handcrafted with <span class="dashicons dashicons-heart"></span> in Vermont · &copy; Copyright 2018</p>
+	<?php
+}
+
 // Add the flexible footer widget area.
 add_action( 'genesis_before_footer', 'workstation_footer_widgets' );
 function workstation_footer_widgets() {
@@ -324,3 +333,6 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Flexible Footer', 'workstation-pro' ),
 	'description' => __( 'This is the footer section.', 'workstation-pro' ),
 ) );
+
+//* Display author box on single posts
+add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );
