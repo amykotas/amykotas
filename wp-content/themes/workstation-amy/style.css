@@ -1739,6 +1739,11 @@ p.entry-meta {
 	color: #ff4800;
 }
 
+.site-footer .dashicons {
+	color: #A73571;
+	position: relative;
+    top: -3px;
+}
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
