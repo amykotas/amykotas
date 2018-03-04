@@ -1433,6 +1433,12 @@ img.alignright,
 	color: #ff4800;
 }
 
+#front-page-1 h3 {
+	font-family: 'Homemade Apple', cursive;
+	letter-spacing: 0;
+	text-transform: inherit;
+}
+
 .image-section-1,
 .image-section-2 {
 	background-position: top;
