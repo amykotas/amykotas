@@ -288,12 +288,12 @@ function workstation_widget_area_class( $id ) {
 
 }
 
-//* Customize the entire footer
+//* Custom site footer
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>Handcrafted with <span class="dashicons dashicons-heart"></span> in Vermont · &copy; Copyright 2018</p>
+	<p>&copy; Copyright 2018 <a href="https://amykotas.com">Amy Kotas</a>. All Rights Reserved. Built by me with <a href="http://wordpress.org/">WordPress</a> &amp; <a href="https://www.studiopress.com/">Genesis</a>.</p>
 	<?php
 }
 

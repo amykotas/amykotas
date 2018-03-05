@@ -1678,6 +1678,17 @@ p.entry-meta {
 	font-size: 1.6rem;
 }
 
+.sidebar h3 {
+	font-family: 'Homemade Apple', cursive;
+    letter-spacing: 0;
+    text-transform: inherit;
+}
+
+#user-profile-2 {
+	background-color: #f4f4f4;
+    padding: 10px 15px;
+} 
+
 
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -1746,7 +1757,7 @@ p.entry-meta {
 }
 
 .site-footer .dashicons {
-	color: #A73571;
+	color: #ED2242;
 	position: relative;
     top: -3px;
 }
