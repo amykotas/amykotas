@@ -58,6 +58,7 @@
 		- Secondary Navigation
 	- Content Area
 		- Front Page
+		- Portfolio Page
 		- Flexible Widgets
 		- Entries
 		- After Entry
@@ -1445,6 +1446,39 @@ img.alignright,
 	background-size: cover;
 	min-height: 500px;
 }
+
+/* Portfolio Page
+--------------------------------------------- */
+.project-info h2 {
+	color: #dc9f48;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 1.8rem;
+    letter-spacing: 0;
+    margin-bottom: 1.8rem;
+}
+
+.project-info p {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+}
+
+.project-info ul {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.project-info ul > li {
+	border-bottom: 1px dotted #ddd;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+}
+
+.project-info li {
+	list-style-type: none !important;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
 
 /* Flexible Widgets
 --------------------------------------------- */
