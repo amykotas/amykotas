@@ -59,6 +59,7 @@
 	- Content Area
 		- Front Page
 		- Portfolio Page
+		- About Page
 		- Flexible Widgets
 		- Entries
 		- After Entry
@@ -223,15 +224,19 @@ mark {
 
 blockquote {
 	background: #f9f9f9;
-	border-left: 4px solid #A73571;
+	border-left: 4px solid #dc9f48;
 	margin: 1em 10px;
-	padding: 1em 30px;	
+	padding: 1em 30px;
+	font-family: 'Baskerville', Garamond, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.5;
 }
 
 blockquote::before {
 	content: "\201C";
 	display: block;
-	font-size: 30px;
+	font-size: 38px;
 	font-style: normal;
 	height: 0;
 	left: -20px;
@@ -266,7 +271,6 @@ h4,
 h5,
 h6 {
 	font-family: 'Baskerville', Garamond, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-	font-weight: 600;
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -1447,6 +1451,50 @@ img.alignright,
 	min-height: 500px;
 }
 
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  img {
+	width: 100%;
+  }
+  h2 {
+	margin-top: 0;
+	margin-bottom: 0.4em;
+  }
+  
+  /*Flex items*/
+  .list {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .list-item {
+	  display: flex; 
+	padding: 0.5em;
+	  width: 100%;
+  }
+  @media all and (min-width: 40em) {
+	.list-item {
+	  width: 50%;
+	}
+  }
+  @media all and (min-width: 60em) {
+	.list-item {
+	  width: 33.33%;
+	}
+  }
+  .list-content {
+	  background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	  width: 100%;
+  }
+  .list-content p {
+	  flex: 1 0 auto;
+  }
+
 /* Portfolio Page
 --------------------------------------------- */
 .project-info h2 {
@@ -1479,6 +1527,13 @@ img.alignright,
 	padding-bottom: 10px;
 }
 
+/* About Page
+--------------------------------------------- */
+
+.headshot {
+	width: auto;
+	border-radius: 50%;
+}
 
 /* Flexible Widgets
 --------------------------------------------- */
