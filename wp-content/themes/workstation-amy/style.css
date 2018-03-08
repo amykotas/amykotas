@@ -1495,6 +1495,15 @@ ul, li {
 	  flex: 1 0 auto;
   }
 
+ul#horizontal {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#horizontal li {
+	float: left;
+}
+
 /* Portfolio Page
 --------------------------------------------- */
 .project-info h2 {
@@ -2162,3 +2171,4 @@ p.entry-meta {
 	}
 
 }
+
