@@ -1141,20 +1141,20 @@ img.alignright,
 }
 
 .site-title {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: 'Homemade Apple', cursive;
 	font-size: 24px;
 	font-size: 2.4rem;
 	font-weight: 300;
-	letter-spacing: 2px;
+	letter-spacing: 0;
 	line-height: 1.2;
 	margin-bottom: 0;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #424242;
+	color: #DC9F48;
 	text-decoration: none;
 }
 
