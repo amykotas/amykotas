@@ -1141,11 +1141,11 @@ img.alignright,
 }
 
 .site-title {
-	font-family: 'Homemade Apple', cursive;
+	font-family: 'Homemade Apple', cursive!important;
 	font-size: 24px;
 	font-size: 2.4rem;
 	font-weight: 300;
-	letter-spacing: 0;
+	letter-spacing: none;
 	line-height: 1.2;
 	margin-bottom: 0;
 	text-transform: lowercase;
@@ -1438,10 +1438,16 @@ img.alignright,
 	color: #ff4800;
 }
 
-#front-page-1 h3 {
+.front-page-1 h3 {
 	font-family: 'Homemade Apple', cursive;
 	letter-spacing: 0;
 	text-transform: inherit;
+}
+
+span.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
 }
 
 .image-section-1,
