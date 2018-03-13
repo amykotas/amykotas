@@ -84,7 +84,7 @@
 --------------------------------------------- */
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#424242}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#3B3F42}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 /* Box Sizing
 --------------------------------------------- */
@@ -136,6 +136,24 @@ input[type="search"] {
 	display: table;
 }
 
+/* Utility 
+--------------------------------------------- */
+.element-invisible { 
+	/* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+	position: absolute !important;
+	height: 1px; width: 1px; 
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+  }
+  .visuallyhidden { 
+	  /* https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+  }
 
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
@@ -154,7 +172,7 @@ body > div {
 
 body {
 	background-color: #fff;
-	color: #424242;
+	color: #3B3F42;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",      sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -186,8 +204,17 @@ a {
 
 a:hover,
 a:focus {
-	color: #424242;
+	color: #3B3F42;
 	text-decoration: none;
+}
+
+.link-arrow::after { 
+    margin-left: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 p {
@@ -203,6 +230,16 @@ ul {
 
 li {
 	list-style-type: none;
+}
+
+.arrow li:before {
+	content: "";
+    display: block;
+    background: url("http://amykotas.test/wp-content/uploads/2018/03/arrow-rt.png") no-repeat;
+	width: 21px;
+    height: 20px;
+    float: left;
+    margin: 7px 8px 0 0;
 }
 
 b,
@@ -260,6 +297,26 @@ hr {
 	margin: 0 0 40px;
 	padding-top: 12px;
 }
+
+span.amp {
+	font-family: 'Baskerville', 'Goudy Old Style', 'Palatino', 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.decorative {
+	position: absolute;
+    width: 185px;
+    height: 116px;
+    background-image: url(http://amykotas.test/wp-content/uploads/2018/03/divider.png);
+    background-size: 70px auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-top: 75px;
+    left: 50%;
+    z-index: 1;
+}
+
 
 /* Headings
 --------------------------------------------- */
@@ -407,7 +464,7 @@ select,
 textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
-	color: #424242;
+	color: #3B3F42;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -430,12 +487,12 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-	color: #424242;
+	color: #3B3F42;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-	color: #424242;
+	color: #3B3F42;
 }
 
 button,
@@ -510,7 +567,7 @@ input[type="submit"].small,
 .front-page-3 input:focus[type="submit"],
 .front-page-3 .button:focus {
 	background-color: #fff;
-	color: #424242;
+	color: #3B3F42;
 }
 
 button:disabled,
@@ -580,7 +637,7 @@ th {
 	background-color: #fff;
 	border: 0;
 	clip: rect(0, 0, 0, 0);
-	color: #424242;
+	color: #3B3F42;
 	font-family: sans-serif;
 	height: 1px;
 	overflow: hidden;
@@ -760,7 +817,7 @@ th {
 }
 
 .author-box {
-	background-color: #424242;
+	background-color: #3B3F42;
 	color: #fff;
 	margin-bottom: 40px;
 	padding: 40px;
@@ -831,7 +888,7 @@ th {
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #424242;
+	color: #3B3F42;
 	text-decoration: none;
 }
 
@@ -961,7 +1018,7 @@ img.alignright,
 
 .content .widget li a,
 .sidebar .widget li a {
-	color: #424242;
+	color: #3B3F42;
 	text-decoration: none;
 }
 
@@ -1111,7 +1168,7 @@ img.alignright,
 
 /* Display outline on focus */
 :focus {
-	color: #424242;
+	color: #3B3F42;
 	outline: #ccc solid 1px;
 }
 
@@ -1228,7 +1285,7 @@ img.alignright,
 
 .genesis-nav-menu a {
 	border-bottom: 2px solid transparent;
-	color: #424242;
+	color: #3B3F42;
 	display: block;
 	padding: 20px 0;
 	text-decoration: none;
@@ -1344,7 +1401,7 @@ img.alignright,
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #424242;
+	background-color: #3B3F42;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
@@ -1360,7 +1417,7 @@ img.alignright,
 }
 
 .nav-secondary .genesis-nav-menu .sub-menu a {
-	color: #424242;
+	color: #3B3F42;
 }
 
 .nav-secondary .genesis-nav-menu .sub-menu a:focus,
@@ -1389,18 +1446,18 @@ img.alignright,
 .add-color .after-header a:focus,
 .add-color .after-header a:hover,
 .add-color .after-header .page-title {
-	color: #424242;
+	color: #3B3F42;
 }
 
 .add-color .nav-primary .genesis-nav-menu > li > a:focus,
 .add-color .nav-primary .genesis-nav-menu > li > a:hover,
 .add-color .nav-primary .sub-menu {
-	border-color: #424242;
+	border-color: #3B3F42;
 }
 
 .add-black .site-header,
 .add-black .after-header {
-	background-color: #424242;
+	background-color: #3B3F42;
 }
 
 .add-black .after-header a,
@@ -1423,8 +1480,29 @@ img.alignright,
 	border-bottom: 1px solid #ff4800;
 }
 
+/* playing with zigzag border from https://launchforth.io/blog/post/zig-zag-borders-in-css/1205/ */
+/*.front-page-2 {
+	position: relative;
+	background: #ffffff;
+}
+
+.front-page-2:after {
+	background: linear-gradient(-45deg, #0b4881 10px, transparent 0), linear-gradient(45deg, #0b4881 10px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 16px;
+}*/
+
 .front-page-3 {
-	background-color: #424242;
+	background-color: #3B3F42;
+	background-image: url("http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png");
 }
 
 .front-page-3,
@@ -1444,17 +1522,11 @@ img.alignright,
 	text-transform: inherit;
 }
 
-span.amp {
-	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-	font-style: italic;
-	font-weight: normal;
-}
-
 .image-section-1,
 .image-section-2 {
-	background-position: top;
+	background-position: center;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 700px; /* ORIG 500 */
 }
 
 ul, li {
@@ -1501,15 +1573,6 @@ ul, li {
 	  flex: 1 0 auto;
   }
 
-ul#horizontal {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-#horizontal li {
-	float: left;
-}
-
 /* Portfolio Page
 --------------------------------------------- */
 .project-info h2 {
@@ -1548,6 +1611,12 @@ ul#horizontal {
 .headshot {
 	width: auto;
 	border-radius: 50%;
+}
+
+/* Portfolio Page
+--------------------------------------------- */
+.portfolio .site-header {
+	background-color: #1b4ba0!important;
 }
 
 /* Flexible Widgets
@@ -1646,7 +1715,7 @@ ul#horizontal {
 }
 
 .entry-content code {
-	background-color: #424242;
+	background-color: #3B3F42;
 	color: #ddd;
 }
 
@@ -1708,7 +1777,7 @@ p.entry-meta {
 
 .archive-pagination li a {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	color: #424242;
+	color: #3B3F42;
 	cursor: pointer;
 	display: inline-block;
 	padding: 8px 12px;
@@ -1798,7 +1867,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #424242;
+	background-color: #D7E7E8;
 	clear: both;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
@@ -1809,11 +1878,12 @@ p.entry-meta {
 .footer-widgets,
 .footer-widgets a,
 .footer-widgets a.button {
-	color: #fff;
+	color: #3B3F42;
+	text-decoration: none;
 }
 
 .footer-widgets input {
-	border: 1px solid #424242;
+	border: 1px solid #3B3F42;
 }
 
 .footer-widgets a:focus,
@@ -1836,13 +1906,18 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #424242;
-	color: #fff;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",      sans-serif;
+	background-color: #D7E7E8;
+	color: #3B3F42;
+	/*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",      sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
-	font-weight: 300;
+	font-weight: 300;*/
+	font-family: 'Walter Turncoat', cursive;
+	font-size: 1.1rem;
+	font-weight: normal;
+	letter-spacing: 0.19em;
+	text-align: center;
+	text-transform: uppercase;
 	line-height: 1;
 	padding: 60px 0;
 }
@@ -1864,6 +1939,19 @@ p.entry-meta {
 	color: #ED2242;
 	position: relative;
     top: -3px;
+}
+
+.site-footer .sep {
+	padding: 0 5px;
+}
+
+#site-credits {
+	padding-top: 1em;
+}
+
+#site-credits li {
+	letter-spacing: 0.2em;
+	display: inline-block;
 }
 
 /* Media Queries
@@ -1898,7 +1986,7 @@ p.entry-meta {
 
 	.image-section-1,
 	.image-section-2 {
-		min-height: 400px;
+		min-height: 600px; /* ORIG 400 */
 	}
 
 }
@@ -2009,7 +2097,7 @@ p.entry-meta {
 
 	.menu-toggle,
 	.sub-menu-toggle {
-		background-color: #424242;
+		background-color: #3B3F42;
 		color: #fff;
 		display: block;
 		margin: 0 auto;
@@ -2022,7 +2110,7 @@ p.entry-meta {
 	.menu-toggle:hover,
 	.sub-menu-toggle:focus,
 	.sub-menu-toggle:hover {
-		background-color: #424242;
+		background-color: #3B3F42;
 		border-width: 0;
 		color: #ff4800;
 	}
@@ -2069,7 +2157,7 @@ p.entry-meta {
 	}
 
 	.genesis-responsive-menu .genesis-nav-menu {
-		background-color: #424242;
+		background-color: #3B3F42;
 	}
 
 	.genesis-responsive-menu .genesis-nav-menu .menu-item {
@@ -2137,7 +2225,7 @@ p.entry-meta {
 
 	.image-section-1,
 	.image-section-2 {
-		min-height: 200px;
+		min-height: 400px; /* ORIG 200 */
 	}
 
 	.site-container .flexible-widgets.widget-fourths .widget,

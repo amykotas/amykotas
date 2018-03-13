@@ -49,7 +49,7 @@ define( 'CHILD_THEME_VERSION', '1.1.3' );
 add_action( 'wp_enqueue_scripts', 'workstation_enqueue_scripts_styles' );
 function workstation_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Homemade+Apple', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Homemade+Apple|Walter+Turncoat', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -293,7 +293,12 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a href="https://amykotas.com">Amy Kotas</a>. All Rights Reserved. Built by me with <a href="http://wordpress.org/">WordPress</a> &amp; <a href="https://www.studiopress.com/">Genesis</a>.</p>
+	<p>&copy; Copyright 2018 <a href="https://amykotas.com">Amy Kotas</a>. <span class="sep">/</span>Made with <i class="fas fa-heart"></i> by <a href="https://amykotas.com">Amy Kotas</a>.</p>
+	<ul id="site-credits">
+		<li><a href="#">Site Colophon</a> <span class="sep">/</span></li>
+		<li><a href="#">Terms of Use</a> <span class="sep">/</span></li>
+		<li><a href="#">Privacy Policy</a></li>
+	</ul>
 	<?php
 }
 
