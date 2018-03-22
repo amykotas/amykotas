@@ -293,7 +293,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a href="https://amykotas.com">Amy Kotas</a>. <span class="sep">/</span>Made with <i class="fas fa-heart"></i> by <a href="https://amykotas.com">Amy Kotas</a>.</p>
+	<p>&copy; Copyright 2018 <a href="https://amykotas.com">Amy Kotas</a>. Made with <i class="fas fa-heart"></i> by <a href="https://amykotas.com">Amy Kotas</a>.</p>
 	<ul id="site-credits">
 		<li><a href="#">Site Colophon</a> <span class="sep">/</span></li>
 		<li><a href="#">Terms of Use</a> <span class="sep">/</span></li>
