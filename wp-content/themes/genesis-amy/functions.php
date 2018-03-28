@@ -1,8 +1,8 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesis Amy.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * Customized theme based on the Genesis Sample Theme.
  *
  * @package Genesis Sample
  * @author  StudioPress
