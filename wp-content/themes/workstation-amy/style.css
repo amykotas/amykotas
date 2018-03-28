@@ -1528,6 +1528,26 @@ img.alignright,
 	min-height: 700px; /* ORIG 500 */
 }
 
+/* Gradient Overlay experiment
+*
+*
+
+.image-section-1 {
+	position: relative;
+}
+
+.image-section-1:before {
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+	background: -webkit-radial-gradient(left top, circle cover, #e00cb280 15%, #22779980 50%, #c9852680 85%);
+}*/
+
 ul, li {
 	margin: 0;
 	padding: 0;
@@ -1623,7 +1643,7 @@ ul, li {
 
 .flexible-widgets {
 	overflow: hidden;
-	padding: 40px 0; /* ORIG 100px */
+	padding: 100px 0;
 }
 
 .flexible-widgets.widget-full .featuredpost .entry,

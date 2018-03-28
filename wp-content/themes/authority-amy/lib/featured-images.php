@@ -27,6 +27,7 @@ add_action( 'genesis_before_content_sidebar_wrap', 'authority_featured_image', 1
  *
  * @since 1.0.0
  */
+
 function authority_featured_image() {
 
 	$add_single_image = get_theme_mod( 'authority_single_image_setting', authority_customizer_get_default_image_setting() );

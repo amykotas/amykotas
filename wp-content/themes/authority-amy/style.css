@@ -242,6 +242,40 @@ mark {
 }
 
 blockquote {
+	color: #555;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.67;
+	margin: 35px;
+	position: relative;
+}
+
+blockquote::before {
+	color: #ddd;
+	content: "\201C";
+	display: block;
+	font-size: 80px;
+	font-size: 8rem;
+	height: 0;
+	left: -.75em;
+	position: absolute;
+	top: -.5em;
+}
+
+blockquote cite {
+	color: #707070;
+	display: block;
+	font-family: "Futura", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-style: normal;
+	font-weight: 900;
+	letter-spacing: 0.08em;
+	margin-top: 24px;
+	text-transform: uppercase;
+}
+
+blockquote.box {
 	background: #f9f9f9;
 	border-left: 4px solid #dc9f48;
 	margin: 1em 10px;
@@ -249,7 +283,7 @@ blockquote {
 	line-height: 1.67;
 }
 
-blockquote::before {
+blockquote.box::before {
 	content: "\201C";
 	display: block;
 	font-size: 38px;
@@ -609,6 +643,15 @@ input[type="submit"].large {
 	padding: 24px;
 }
 
+button > i:hover  {
+	transform: translateX(6px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
 .site-container button:disabled,
 .site-container button:disabled:hover,
 .site-container input:disabled,
@@ -764,7 +807,9 @@ th:first-child {
 
 .authority-grid .content,
 .full-width-content .content {
-	width: 100%;
+	float: none;
+    margin: 0 auto;
+    max-width: 680px;
 }
 
 .full-width-content.single .content,
@@ -883,8 +928,9 @@ th:first-child {
 
 .author-box {
 	background-color: #E3F0FD;
-	font-size: 14px;
-	font-size: 1.4rem;
+    background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
+	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1.87;
 	margin-bottom: 70px;
 	padding: 35px 70px;
@@ -951,18 +997,13 @@ th:first-child {
 --------------------------------------------- */
 
 .archive-description .entry-title,
+.archive-title,
 .author-box-title {
 	color: #111;
 	font-size: 26px;
 	font-size: 2.6rem;
 	line-height: 1.23;
 	margin-bottom: 20px;
-}
-
-.archive-title {
-	font-size: 56px;
-	font-size: 5.6rem;
-	margin: 0 0 30px 0;
 }
 
 .entry-title {
@@ -1078,7 +1119,7 @@ a.alignright {
 img.centered,
 .aligncenter {
 	display: block;
-	margin: 0 auto 24px;
+	margin: 10px auto 24px;
 }
 
 img.alignnone,
@@ -1089,13 +1130,13 @@ img.alignnone,
 a.alignleft,
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 0 24px 24px 0;
+	margin: 10px 24px 24px 0;
 }
 
 a.alignright,
 img.alignright,
 .wp-caption.alignright {
-	margin: 0 0 24px 24px;
+	margin: 10px 0 24px 24px;
 }
 
 .gallery-caption,
@@ -1667,7 +1708,8 @@ img.alignright,
 
 .authority-featured-image::before,
 .featuredpost .has-post-thumbnail > a::before {
-	background: #E3F0FD;
+	background-color: #E3F0FD;
+	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);	
 	content: "";
 	left: -30px;
 	height: calc(100% + 20px);
@@ -1745,7 +1787,6 @@ img.alignright,
 	position: relative;
 	z-index: 2;
 }
-
 
 /* Entries
 --------------------------------------------- */
