@@ -24,7 +24,7 @@ define( 'CHILD_THEME_VERSION', '1.0.1' );
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Barlow+Condensed:500,700|Roboto+Condensed:400,700|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
@@ -58,9 +58,10 @@ add_theme_support( 'genesis-responsive-viewport' );
  * ========================================================================== */
 
 //* Add support for custom header
+//* Will display at 129x42 (Genesis)
 add_theme_support( 'custom-header', array(
-	'width'           => 400,
-	'height'          => 150,
+	'width'           => 800,
+	'height'          => 100,
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
 	'flex-height'     => true,

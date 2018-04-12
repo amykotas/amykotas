@@ -110,9 +110,9 @@ input[type="search"] {
 
 body {
 	background-color: #fff;
-	color: #12302e;
-	font-family: "Open Sans", "Helvetica", arial;
-	font-size: 15px;
+	color: #122930;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 18px;
 	font-weight: 400;
 	overflow-x: hidden;
 	line-height: 1.612;
@@ -127,7 +127,7 @@ ul {
 }
 
 ul.serif-list {
-	font-family: "Martel";
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-size: 25px;
 	margin-bottom: 40px;
 }
@@ -145,9 +145,10 @@ h3,
 h4,
 h5,
 .entry-title {
+	color: #3A798E;
 	margin: 0 0 1.612rem;
 	line-height: 1.2;
-	font-family: "Roboto Condensed";
+	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -159,8 +160,9 @@ h1,
 
 h2 {
 	font-size: 30px;
-	font-family: "Martel";
-	font-weight: 200;
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: 400;
+	font-style: italic;
 	line-height: 1.612em;
 	margin: 0 0 1.612rem;
 }
@@ -202,7 +204,7 @@ p.intro,
     font-size: 20px;
     line-height: 2;
     font-weight: 200;
-		font-family: "Martel";
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 strong {
@@ -210,21 +212,42 @@ strong {
 }
 
 blockquote {
+	background-color: #fcf7f8;
+	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
+	border-left: 3px solid #fd7077;
+	color: #245971;
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-size: 20px;
-	font-weight: 200;
-	margin: 2em 0;
 	font-style: italic;
+	margin: 2em 0;
+	padding: 1em 2em;
+	
 }
 
 blockquote p:last-of-type {
 	margin: 0;
 }
 
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 38px;
+	font-style: normal;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+blockquote p {
+	display: inline;
+}
+
 code,
 pre {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	font-size: 12px;
-	color: #12302e;
+	color: #122930;
 	border: 1px solid #e1e1e8;
 	background-color: #f7f7f9
 }
@@ -297,14 +320,24 @@ hr,
  * ========================================================================== */
 
 a {
-	color: #57e5ae;
-	text-decoration: none;
-	border-bottom: 1px solid;
+	/*background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(215,231,232,.4)),color-stop(35%,transparent));
+    background: linear-gradient(to top,#D7E7E8 30%,transparent 30%);*/
+	border-bottom: 1px solid #409fbf;
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-style: italic;
 	outline: 0;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
 }
 
 a:hover {
-	border-color: transparent;
+	color: #122930;
+	background: #D7E7E8;
+	border-bottom: 1px solid #D7E7E8;
+}
+
+h4 a {
+	font-style: normal;
 }
 
 /* Transitions
@@ -359,6 +392,17 @@ img {
 	border: 0;
 }
 
+.headshot.alignright {
+	width: 30%;
+    margin-left: 1.5em;
+}
+
+.headshot {
+	/*border: 5px solid hsla(195, 42%, 89%, 1)!important;*/
+	border-radius: 100%;
+	margin-bottom: 1.5em;
+}
+
 
 /* Forms, Inputs & Buttons
  * ========================================================================== */
@@ -369,7 +413,7 @@ textarea {
 	background-color: #fff;
 	border-radius: 2px;
 	border: 1px solid #dcdcdc;
-	color: #12302e;
+	color: #122930;
 	font-size: 16px;
 	padding: 14px 16px;
 	width: 100%;
@@ -389,6 +433,7 @@ input[type="email"] {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	font-style: normal;
 }
 
 input[type="checkbox"],
@@ -469,9 +514,11 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
+	background: #f24850;
+	color: #fff;
 	text-decoration: none;
 	opacity: 1;
-	box-shadow: inset 0 0 0 200px rgba(0,0,0,0.1);
+	box-shadow: inset 0 0 0 200px rgba(18, 41, 48, 0.25);
 }
 
 .button.small {
@@ -481,7 +528,7 @@ input:hover[type="submit"],
 
 .button.light {
 	background: #eee;
-	color: #12302e;
+	color: #122930;
 }
 
 .bg-primary .button.light,
@@ -964,7 +1011,7 @@ a[rel~="attachment"]:hover,
 }
 
 .widget li.current-menu-item a {
-	color: #12302e;
+	color: #f24850;
 	border: 0;
 }
 
@@ -1142,29 +1189,22 @@ a[rel~="attachment"]:hover,
 	line-height: 1.2;
 	margin: 0 auto;
 	text-transform: none;
-	font-family: "Martel";
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .site-title a {
-	color: #12302e;
+	color: #122930;
 	border: 0;
+	font-style: normal;
 }
 
-.header-image .nav-primary:not(button) {
-	margin-top: 22px;
+/*.header-image*/ .nav-primary:not(button) {
+	margin-top: 3px;
 }
 
 .header-image .site-title {
 	display: block;
 	text-indent: -9999px;
-}
-
-.header-image .site-title > a {
-	background-position: center center !important;
-	background-size: contain !important;
-	float: left;
-	min-height: 75px;
-	width: 200px;
 }
 
 .header-image .title-area {
@@ -1179,7 +1219,7 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 800px) {
 
 	.site-header {
-		padding: 60px 0 50px;
+		padding: 40px 0 50px;
 	}
 
 	.title-area {
@@ -1189,6 +1229,36 @@ a[rel~="attachment"]:hover,
 	.header-image .site-title {
 		margin-top: 5px;
 	}
+}
+
+/* 
+Code for retina logo from https://crunchify.com/how-to-add-logo-in-2x-retina-resolution-to-blog-with-css-tricks-wordpress-genesis-framework/
+*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.header-image .site-title > a {
+        float: left;
+        min-height: 65px;
+        width: 100%;
+        background: url(background: url(http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png) no-repeat left top !important;) no-repeat left top !important;
+        background-size: 129px 42px !important;
+}
+ 
+.header-image .title-area,
+.header-image .site-title,
+.header-image .site-title a {
+    max-width: 153px;
+    min-height: 50px;
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin: 0;
 }
 
 /* Navigation
@@ -1203,9 +1273,11 @@ a[rel~="attachment"]:hover,
 .genesis-nav-menu a {
 	border: none;
 	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-style: normal;
 	margin: 0 16px 0;
 	position: relative;
-	color: #12302e;
+	color: #122930;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: 400;
@@ -1215,16 +1287,17 @@ a[rel~="attachment"]:hover,
 .genesis-nav-menu .menu-item a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	background: none;
 	text-decoration: none;
 	opacity: 1;
-	color: #57e5ae;
+	color: #f24850;
 }
 
 @media only screen and (min-width: 800px) {
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
-		border: 1px solid #12302e;
+		border: 1px solid #11415c;
 		border-radius: 2px;
 		line-height: 1;
 		padding: 10px 20px;
@@ -1233,7 +1306,7 @@ a[rel~="attachment"]:hover,
 	.genesis-nav-menu .sub-menu {
 		width: 180px;
 		z-index: 99;
-		background: #12302e;
+		background: #11415c;
 		border-radius: 2px;
 		opacity: 0;
 		margin-top: -12px;
@@ -1338,12 +1411,12 @@ a[rel~="attachment"]:hover,
 	}
 
 	.header-image .menu-toggle {
-		margin-top: 12px;
+		margin-top: -10px /* originally 12px*/;
 	}
 
 	.menu-toggle:before {
 		position: absolute;
-		color: #12302e;
+		color: #122930;
 		top: 3px;
 		right: 13px;
 		content: "\f394";
@@ -1368,7 +1441,7 @@ a[rel~="attachment"]:hover,
 
 	.sub-menu-toggle:before {
 		content: "\f123";
-		color: #12302e;
+		color: #122930;
 		font: normal 16px/1 'ionicons';
 		padding: 14px 5px 14px;
 		cursor: pointer;
@@ -1397,7 +1470,7 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 800px) {
 
 	.nav-primary .genesis-nav-menu a {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	.nav-primary {
@@ -1405,7 +1478,7 @@ a[rel~="attachment"]:hover,
 	}
 
 	.nav-primary .genesis-nav-menu > li > a {
-		margin: 0 0 0 24px;
+		margin: -7px 0 0 24px;
 		padding: 15px 0;
 	}
 
@@ -1421,7 +1494,7 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 1024px) {
 
 	.nav-primary .genesis-nav-menu > li > a {
-		margin: -2px 0 0 36px;
+		margin: -7px 0 0 36px;
 	}
 }
 
@@ -1633,7 +1706,7 @@ a[rel~="attachment"]:hover,
 }
 
 .entry-title a {
-	color: #12302e;
+	color: #122930;
 	border: 0;
 }
 
@@ -1742,6 +1815,14 @@ a[rel~="attachment"]:hover,
 .breadcrumb {
 	margin-bottom: 40px;
 }
+
+ 
+/* Services
+ * ========================================================================== */
+
+.page-id-11 .entry-title {
+	display:none;
+	}
 
 
 /* Portfolio
@@ -2001,7 +2082,13 @@ p.comment-form-comment {
  * ========================================================================== */
 
 .footer-widgets {
-	padding: 40px 0 0;
+	background-color: #D7E7E8;
+	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
+	padding: 20px 0 0;
+}
+
+.footer-widgets .wrap {
+	
 }
 
 .footer-widgets .widget-area {
