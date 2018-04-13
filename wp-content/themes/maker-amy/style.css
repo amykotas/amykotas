@@ -320,8 +320,6 @@ hr,
  * ========================================================================== */
 
 a {
-	/*background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(215,231,232,.4)),color-stop(35%,transparent));
-    background: linear-gradient(to top,#D7E7E8 30%,transparent 30%);*/
 	border-bottom: 1px solid #409fbf;
 	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-style: italic;
@@ -492,6 +490,7 @@ input[type="submit"],
 .button {
 	font-family: "Open Sans";
 	background-color: #57e5ae;
+	border-bottom: none;
 	border-radius: 2px;
 	box-shadow: none;
 	border: 0;
@@ -515,6 +514,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
 	background: #f24850;
+	border-bottom: none;
 	color: #fff;
 	text-decoration: none;
 	opacity: 1;
