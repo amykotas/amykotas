@@ -492,7 +492,6 @@ textarea:focus:-ms-input-placeholder {
 	color: transparent;
 }
 		
-}
 .mc4wp-form ::-webkit-input-placeholder { /* WebKit browsers */
 	color: #888;
 	}
@@ -1277,7 +1276,7 @@ only screen and (                min-resolution: 2dppx) {
         float: left;
         min-height: 65px;
         width: 100%;
-        background: url(background: url(http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png) no-repeat left top !important;) no-repeat left top !important;
+        background: url("http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png") no-repeat left top !important;
         background-size: 129px 42px !important;
 }
  
