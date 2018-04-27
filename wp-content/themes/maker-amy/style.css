@@ -87,6 +87,18 @@ input[type="search"] {
 	display: none;
 }
 
+/* Visually hide elements but keep info available to screen readers */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -412,7 +424,7 @@ textarea {
 	border-radius: 2px;
 	border: 1px solid #dcdcdc;
 	color: #122930;
-	font-size: 16px;
+	font-size: 19px /* was 16px before font change */;
 	padding: 14px 16px;
 	width: 100%;
 }
@@ -479,6 +491,25 @@ textarea:focus::-moz-placeholder,
 textarea:focus:-ms-input-placeholder {
 	color: transparent;
 }
+		
+}
+.mc4wp-form ::-webkit-input-placeholder { /* WebKit browsers */
+	color: #888;
+	}
+	
+.mc4wp-form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #888;
+opacity: 1;
+}
+
+.mc4wp-form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #888;
+opacity: 1;
+}
+
+.mc4wp-form :-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #888;
+}
 
 /* Buttons
  * ========================================================================== */
@@ -513,7 +544,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background: #f24850;
+	background: #F24850;
 	border-bottom: none;
 	color: #fff;
 	text-decoration: none;
@@ -2077,18 +2108,14 @@ p.comment-form-comment {
 	}
 }
 
-
 /* Footer Widgets
  * ========================================================================== */
 
 .footer-widgets {
-	background-color: #D7E7E8;
+	background-color: #11415C;
 	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
-	padding: 20px 0 0;
-}
-
-.footer-widgets .wrap {
-	
+	color: #fff;
+	padding: 40px 0 0;
 }
 
 .footer-widgets .widget-area {
@@ -2098,6 +2125,10 @@ p.comment-form-comment {
 .footer-widgets .widget-area:first-child {
 	width: 100%;
 	margin: 0 auto 40px;
+}
+
+.footer-widgets.enews {
+	color: #8fc1d1;
 }
 
 .footer-widgets-2 .widgettitle,

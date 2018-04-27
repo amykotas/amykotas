@@ -75,7 +75,7 @@
 }
 
 .front-page-2 .widget-area {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 
@@ -129,6 +129,15 @@
 	display: block;
 }
 
+.front-page-2 article .entry-header a:hover {
+	text-sh
+}
+
+.front-page-2 article img:hover {
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
 .front-page-2 .widget-area {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -149,6 +158,17 @@
 	 margin-top: 60px;
 }
 
+/* Front Page 4
+ * ========================================================================== */
+
+.front-page-4 {
+	background-color: #D7E7E8;
+	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
+}
+
+.front-page-4 {
+	padding-top: 80px;
+}
 
 /* Front Page 6
  * ========================================================================== */
@@ -210,4 +230,12 @@
 		margin-left: 7.6822916667;
 	}
 
+}
+
+
+/* Front Page 9
+ * ========================================================================== */
+
+.front-page-9 .widget-area {
+	margin-top: 60px;
 }
