@@ -1780,7 +1780,14 @@ only screen and (                min-resolution: 2dppx) {
 
 .entry-content ul li,
 .entry ul li {
-	list-style-type: disc;
+	list-style-type: none;
+}
+
+.entry-content ul li::before {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Pro';
+	float: left;
+	margin-left: -1.5em;
 }
 
 .entry-content ol ol,
