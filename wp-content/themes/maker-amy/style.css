@@ -174,7 +174,6 @@ h2 {
 	font-size: 30px;
 	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-weight: 400;
-	font-style: italic;
 	line-height: 1.612em;
 	margin: 0 0 1.612rem;
 }
@@ -225,7 +224,6 @@ strong {
 
 blockquote {
 	background-color: #fcf7f8;
-	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
 	border-left: 3px solid #fd7077;
 	color: #245971;
 	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -332,7 +330,7 @@ hr,
  * ========================================================================== */
 
 a {
-	border-bottom: 1px solid #409fbf;
+	border-bottom: 1px solid #DC9F48; /*#409fbf*/
 	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-style: italic;
 	outline: 0;
@@ -397,9 +395,30 @@ video,
 }
 
 img {
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: 300;
+	line-height: 2;  
+	text-align: center;
+	
+	display: block;
+	position: relative;
 	height: auto;
 	max-width: 100%;
 	border: 0;
+}
+
+/* Styling broken images credit https://bitsofco.de/styling-broken-images/ */
+
+img:before { 
+	content: "I'm sorry, the image below is broken. ☹️";
+	display: block;
+	margin-bottom: 10px;
+}
+
+img:after { 
+	content: "(url: " attr(src) ")";
+	display: block;
+	font-size: 12px;
 }
 
 .headshot.alignright {
@@ -474,12 +493,12 @@ select.input-large {
 }
 
 ::-moz-placeholder {
-	color: #d8d8d8;
+	color: #888;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-	color: #d8d8d8;
+	color: #888;
 }
 
 input:focus::-webkit-input-placeholder,
@@ -619,6 +638,23 @@ input:hover[type="submit"],
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
 	display: none;
+}
+
+.my-button{
+	display: inline-block;
+	padding: 8px 12px;
+	background: #eee;
+	border: solid 1px #D5D5D5;
+}
+.my-button span{
+	display: inline-block;
+}
+
+.my-button span:after {
+	color: #fff;
+	content: '➞';
+	position: relative;
+	margin-left: 5px;
 }
 
 /* Gallery
@@ -1066,6 +1102,10 @@ a[rel~="attachment"]:hover,
 	color: #57e5ae;
 }
 
+i.fal {
+	font-family: 'Font Awesome 5 Pro';
+}
+
 /* Featured Content
  * ========================================================================== */
 
@@ -1095,6 +1135,10 @@ a[rel~="attachment"]:hover,
 
 .enews-widget input {
 	margin-bottom: 10px;
+}
+
+.enews-widget h3 {
+	color: #3da1c2;
 }
 
 .enews-widget p {
@@ -1784,8 +1828,9 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .entry-content ul li::before {
-	content: '\f105';
-	font-family: 'Font Awesome 5 Pro';
+	color: #fd7077;
+	content: '\f101';
+	font-family: 'Font Awesome 5 Pro'; 
 	float: left;
 	margin-left: -1.5em;
 }
@@ -1917,11 +1962,25 @@ only screen and (                min-resolution: 2dppx) {
   margin: 0;
 }
 
+.portfolio h1.entry-title {
+	font-size: 32px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.portfolio h1.entry-title {
+		font-size: 50px;
+	}
+}
+
 .genesis-pro-portfolio .content .pro-portfolio .entry-header a {
   color: #fff;
   padding: 20px;
   width: 100%;
   display: block;
+}
+
+.portfolio img {
+	border: 1px solid #e6e6e6;
 }
 
 .portfolio-featured-image img {
@@ -2179,6 +2238,10 @@ p.comment-form-comment {
 	padding: 40px 0;
 	font-size: 14px;
 	text-align: center;
+}
+
+.site-footer .dashicons-heart {
+	color: #FD7077;
 }
 
 .site-footer p {

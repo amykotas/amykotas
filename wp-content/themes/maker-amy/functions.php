@@ -24,10 +24,11 @@ define( 'CHILD_THEME_VERSION', '1.0.1' );
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Barlow+Condensed:500,700|Roboto+Condensed:400,700|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Karla:400,400i,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'font-awesome', '/fonts/webfonts/css/fontawesome-all.css', array(), CHILD_THEME_VERSION );
-
+	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-brands.css', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-light.css', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-solid.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
 	wp_enqueue_script( 'maker-global', get_stylesheet_directory_uri() . '/js/global.js', array(), CHILD_THEME_VERSION );
 	wp_enqueue_script( 'maker-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array(), CHILD_THEME_VERSION );
@@ -292,3 +293,19 @@ add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );
 
 //* Display author box on archive pages
 add_filter( 'get_the_author_genesis_author_box_archive', '__return_true' );
+
+
+//* Custom site footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p> Made with <span class="dashicons dashicons-heart"></span> by me. <a href="/site-credits">Site credits</a>.<br>&copy; 2018 <a href="https://amykotas.com">Amy Kotas</a>.</p>
+	<!--<ul id="site-credits">
+		<li><a href="#">Site Credits</a> <span class="sep">/</span></li>
+		<li><a href="#">Terms of Use</a> <span class="sep">/</span></li>
+		<li><a href="#">Privacy Policy</a></li>
+	</ul>-->
+
+	<?php
+}

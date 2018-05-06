@@ -65,6 +65,12 @@
 	margin: 40px auto;
 }
 
+h3.front-page-1  {
+	font-size: 4.8rem;
+    line-height: 1.2;
+    max-width: 720px;
+}
+
 /* Front Page 2
  * ========================================================================== */
 
