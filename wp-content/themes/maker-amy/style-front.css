@@ -173,8 +173,6 @@ h3.front-page-1  {
 
 .front-page-4 {
 	background-color: #e98687;
-	/*background-color: #D7E7E8;
-	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);*/
 }
 
 .front-page-4 {
@@ -185,15 +183,29 @@ h3.front-page-1  {
 	text-align: center;
 }
 
-.front-page-4 .featured-testimonial {
+.front-page-4 .featured-testimonial h2 {
 	font-family: "Georgia", serif;
 	color: #fff;
 }
 
-.front-page-4 .testimonial-client {
+.front-page-4 .featured-testimonial-photo img {
+	border: 2px solid #FADCD9;
+	border-radius: 50%;
+}
+
+.front-page-4 .featured-testimonial-client {
 	color: #FADCD9;
 }
 
+.front-page-4 .featured-testimonial-client a {
+	color: #FADCD9;
+	border-bottom: none;
+}
+
+.front-page-4 .featured-testimonial-client a:hover {
+	background: none;
+	border-bottom: 1px solid #FADCD9;
+}
 
 /* Front Page 6
  * ========================================================================== */
