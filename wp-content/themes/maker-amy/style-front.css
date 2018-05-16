@@ -65,6 +65,11 @@
 	margin: 40px auto;
 }
 
+h1,
+.front-page-1 .widgettitle {
+	font-size: 90px;
+}
+
 h3.front-page-1  {
 	font-size: 4.8rem;
     line-height: 1.2;
@@ -167,13 +172,28 @@ h3.front-page-1  {
  * ========================================================================== */
 
 .front-page-4 {
-	background-color: #D7E7E8;
-	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);
+	background-color: #e98687;
+	/*background-color: #D7E7E8;
+	background-image: url(http://amykotas.test/wp-content/uploads/2018/03/grilled-noise.png);*/
 }
 
 .front-page-4 {
 	padding-top: 80px;
 }
+
+.front-page-4 .textwidget {
+	text-align: center;
+}
+
+.front-page-4 .featured-testimonial {
+	font-family: "Georgia", serif;
+	color: #fff;
+}
+
+.front-page-4 .testimonial-client {
+	color: #FADCD9;
+}
+
 
 /* Front Page 6
  * ========================================================================== */

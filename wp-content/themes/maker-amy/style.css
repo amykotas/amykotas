@@ -122,9 +122,9 @@ input[type="search"] {
 
 body {
 	background-color: #fff;
-	color: #122930;
+	color: #555555;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	overflow-x: hidden;
 	line-height: 1.612;
@@ -139,7 +139,7 @@ ul {
 }
 
 ul.serif-list {
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "Libre Baskerville", Georgia, serif;
 	font-size: 25px;
 	margin-bottom: 40px;
 }
@@ -160,38 +160,36 @@ h5,
 	color: #3A798E;
 	margin: 0 0 1.612rem;
 	line-height: 1.2;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: "Libre Baskerville", Georgia, serif;;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
-h1,
-.front-page-1 .widgettitle {
-	font-size: 40px;
+h1 {
+	font-size: 2em;
 }
 
 h2 {
-	font-size: 30px;
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 1.6818em
+	font-family: "Libre Baskerville", Georgia, serif;
 	font-weight: 400;
 	line-height: 1.612em;
 	margin: 0 0 1.612rem;
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 1.4142em;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 1.1892em;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 h6 {
-	font-size: 14px;
+	font-size:  .8409em;
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-weight: 400;
@@ -212,10 +210,10 @@ p {
 p.intro,
 .archive-description p {
     display: block;
-    font-size: 20px;
+    font-size: 1.1892em;
     line-height: 2;
     font-weight: 200;
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "Libre Baskerville", Georgia, serif;
 }
 
 strong {
@@ -226,8 +224,8 @@ blockquote {
 	background-color: #fcf7f8;
 	border-left: 3px solid #fd7077;
 	color: #245971;
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-	font-size: 20px;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 1em;
 	font-style: italic;
 	margin: 2em 0;
 	padding: 1em 2em;
@@ -241,7 +239,7 @@ blockquote p:last-of-type {
 blockquote::before {
 	content: "\201C";
 	display: block;
-	font-size: 38px;
+	font-size: 1.6818em;
 	font-style: normal;
 	height: 0;
 	left: -20px;
@@ -256,8 +254,8 @@ blockquote p {
 code,
 pre {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-	font-size: 12px;
-	color: #122930;
+	font-size: 0.8409em;
+	color: #555555;
 	border: 1px solid #e1e1e8;
 	background-color: #f7f7f9
 }
@@ -301,10 +299,16 @@ hr,
 	padding: 40px 0 0;
 }
 
-@media only screen and (min-width: 1024px) {
-
+@media only screen and (min-width: 900px) {
 	body {
 		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+	body {
+		font-size: 20px;
 	}
 
 	p.intro,
@@ -312,8 +316,7 @@ hr,
 	    font-size: 25px;
 	}
 
-	h1,
-	.front-page-1 .widgettitle {
+	h1 {
 		font-size: 90px;
 	}
 
@@ -330,16 +333,14 @@ hr,
  * ========================================================================== */
 
 a {
-	border-bottom: 1px solid #DC9F48; /*#409fbf*/
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-	font-style: italic;
+	border-bottom: 1px solid #DC9F48;
 	outline: 0;
 	text-decoration: none;
 	transition: all .2s ease-in-out;
 }
 
 a:hover {
-	color: #122930;
+	color: #555555;
 	background: #D7E7E8;
 	border-bottom: 1px solid #D7E7E8;
 }
@@ -395,7 +396,7 @@ video,
 }
 
 img {
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "Libre Baskerville", Georgia, serif;
 	font-weight: 300;
 	line-height: 2;  
 	text-align: center;
@@ -410,7 +411,7 @@ img {
 /* Styling broken images credit https://bitsofco.de/styling-broken-images/ */
 
 img:before { 
-	content: "I'm sorry, the image below is broken. ☹️";
+	content: "I'm sorry, the image below is broken.";
 	display: block;
 	margin-bottom: 10px;
 }
@@ -418,7 +419,7 @@ img:before {
 img:after { 
 	content: "(url: " attr(src) ")";
 	display: block;
-	font-size: 12px;
+	font-size: 0.8409em;
 }
 
 .headshot.alignright {
@@ -441,8 +442,8 @@ textarea {
 	background-color: #fff;
 	border-radius: 2px;
 	border: 1px solid #dcdcdc;
-	color: #122930;
-	font-size: 19px /* was 16px before font change */;
+	color: #555555;
+	font-size: 0.8409em;
 	padding: 14px 16px;
 	width: 100%;
 }
@@ -477,7 +478,7 @@ textarea:focus {
 }
 
 .input-large {
-	font-size: 24px;
+	font-size: 1em;
 	padding: 15px;
 }
 
@@ -488,7 +489,7 @@ select.input-large {
 }
 
 .input-small {
-	font-size: 12px;
+	font-size: 0.8409em;
 	padding: 5px 10px;
 }
 
@@ -544,7 +545,7 @@ input[type="submit"],
 	border: 0;
 	color: #fff;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 0.8409em;
 	font-weight: 600;
 	line-height: 1.612;
 	display: inline-block;
@@ -561,22 +562,22 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background: #F24850;
+	background: #E46E6F;
 	border-bottom: none;
 	color: #fff;
 	text-decoration: none;
-	opacity: 1;
-	box-shadow: inset 0 0 0 200px rgba(18, 41, 48, 0.25);
+	opacity: 0.85;
+	/*box-shadow: inset 0 0 0 200px rgba(18, 41, 48, 0.25);*/
 }
 
 .button.small {
-	font-size: 14px;
+	font-size: 0.7em;
 	padding: 8px 20px 5px;
 }
 
 .button.light {
 	background: #eee;
-	color: #122930;
+	color: #555555;
 }
 
 .bg-primary .button.light,
@@ -858,8 +859,9 @@ img.alignright.entry-image {
 }
 
 .wp-caption-text {
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-family: Georgia, serif;
+	font-size: 1em;
+	font-style: italic;
 	font-weight: 700;
 	text-align: center;
 }
@@ -1102,9 +1104,6 @@ a[rel~="attachment"]:hover,
 	color: #57e5ae;
 }
 
-i.fal {
-	font-family: 'Font Awesome 5 Pro';
-}
 
 /* Featured Content
  * ========================================================================== */
@@ -1258,11 +1257,11 @@ i.fal {
 	line-height: 1.2;
 	margin: 0 auto;
 	text-transform: none;
-	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "Libre Baskerville", Georgia, serif;
 }
 
 .site-title a {
-	color: #122930;
+	color: #555555;
 	border: 0;
 	font-style: normal;
 }
@@ -1313,21 +1312,30 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 .header-image .site-title > a {
         float: left;
-        min-height: 65px;
+        min-height: 100px;
         width: 100%;
-        background: url("http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png") no-repeat left top !important;
-        background-size: 129px 42px !important;
+        /*background: url("http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png") no-repeat left top !important;
+        background-size: 129px 42px !important;*/
 }
  
 .header-image .title-area,
 .header-image .site-title,
 .header-image .site-title a {
-    max-width: 153px;
+    max-width: 200px;
     min-height: 50px;
     padding: 0;
     width: 100%;
     float: left;
-    margin: 0;
+	margin: 0;
+	transition: all .3s ease-in-out;
+}
+
+/* trying to change SVG logo on hover */ 
+
+.site-title a:hover {
+	opacity: 0.9;
+}
+
 }
 
 /* Navigation
@@ -1346,7 +1354,7 @@ only screen and (                min-resolution: 2dppx) {
 	font-style: normal;
 	margin: 0 16px 0;
 	position: relative;
-	color: #122930;
+	color: #555555;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: 400;
@@ -1485,7 +1493,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.menu-toggle:before {
 		position: absolute;
-		color: #122930;
+		color: #555555;
 		top: 3px;
 		right: 13px;
 		content: "\f394";
@@ -1510,7 +1518,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.sub-menu-toggle:before {
 		content: "\f123";
-		color: #122930;
+		color: #555555;
 		font: normal 16px/1 'ionicons';
 		padding: 14px 5px 14px;
 		cursor: pointer;
@@ -1774,8 +1782,9 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .entry-title a {
-	color: #122930;
+	color: #555555;
 	border: 0;
+	font-style: normal;
 }
 
 .entry-content ol,
@@ -1829,10 +1838,10 @@ only screen and (                min-resolution: 2dppx) {
 
 .entry-content ul li::before {
 	color: #fd7077;
-	content: '\f101';
+	content: '\f0da';
 	font-family: 'Font Awesome 5 Pro'; 
 	float: left;
-	margin-left: -1.5em;
+	margin-left: -1em;
 }
 
 .entry-content ol ol,
