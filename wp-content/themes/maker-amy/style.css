@@ -153,13 +153,14 @@ li {
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
 .entry-title {
 	color: #3A798E;
-	margin: 0 0 1.612rem;
-	line-height: 1.2;
+	margin: 0 0 1rem;
+	line-height: 1.25em /*1.2*/;
 	font-family: "Libre Baskerville", Georgia, serif;;
 	font-weight: 700;
 }
@@ -169,11 +170,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6818em
-	font-family: "Libre Baskerville", Georgia, serif;
-	font-weight: 400;
-	line-height: 1.612em;
-	margin: 0 0 1.612rem;
+	font-size: 1.6818em;
 }
 
 h3 {
@@ -317,15 +314,15 @@ hr,
 	}
 
 	h1 {
-		font-size: 90px;
+		font-size: 3.25em;
 	}
 
 	h2 {
-		font-size: 40px;
+		font-size: 2.75em;
 	}
 
 	h3 {
-		font-size: 50px;
+		font-size: 2em;
 	}
 }
 
@@ -1314,14 +1311,12 @@ only screen and (                min-resolution: 2dppx) {
         float: left;
         min-height: 100px;
         width: 100%;
-        /*background: url("http://amykotas.test/wp-content/uploads/2018/04/amykotas-header@2x.png") no-repeat left top !important;
-        background-size: 129px 42px !important;*/
 }
  
 .header-image .title-area,
 .header-image .site-title,
 .header-image .site-title a {
-    max-width: 200px;
+    max-width: 100px;
     min-height: 50px;
     padding: 0;
     width: 100%;
@@ -1488,12 +1483,12 @@ only screen and (                min-resolution: 2dppx) {
 	}
 
 	.header-image .menu-toggle {
-		margin-top: -10px /* originally 12px*/;
+		margin-top: -5px /* originally 12px*/;
 	}
 
 	.menu-toggle:before {
 		position: absolute;
-		color: #555555;
+		color: #3A798E;
 		top: 3px;
 		right: 13px;
 		content: "\f394";

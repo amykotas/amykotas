@@ -184,8 +184,12 @@ h3.front-page-1  {
 }
 
 .front-page-4 .featured-testimonial h2 {
-	font-family: "Georgia", serif;
 	color: #fff;
+}
+
+@media only screen and (min-width: 1200px) {
+.front-page-4 .featured-testimonial h2 {
+    font-size: 1.618em; }
 }
 
 .front-page-4 .featured-testimonial-photo img {
