@@ -186,9 +186,10 @@ h5 {
 
 h6 {
 	font-size:  .8409em;
-	margin-top: 0;
-	margin-bottom: 20px;
 	font-weight: 400;
+	margin: 0 0 1rem;
+    font-weight: 400;
+    line-height: 1.25em;
 }
 
 h6,
@@ -217,9 +218,11 @@ strong {
 }
 
 blockquote {
-	background-color: #fcf7f8;
-	border-left: 3px solid #fd7077;
-	color: #245971;
+	/*background-color: #fcf7f8;
+	border-left: 3px solid #fd7077;*/
+	background-color: #edf6f8;
+	border-left: 3px solid #7dd1e1;
+	color: #215863;
 	font-family: "Libre Baskerville", Georgia, serif;
 	font-size: 1em;
 	font-style: italic;
@@ -330,7 +333,7 @@ hr,
 
 a {
 	border-bottom: 1px solid #7dd1e1;
-	color: #222;
+	color: #222!important;
 	font-style: italic;
 	outline: 0;
 	text-decoration: none;
@@ -542,7 +545,7 @@ input[type="submit"],
 	border-radius: 2px;
 	box-shadow: none;
 	border: 0;
-	color: #fff;
+	color: #11415C;
 	cursor: pointer;
 	font-size: 0.8409em;
 	font-weight: 600;
@@ -563,10 +566,9 @@ input:hover[type="submit"],
 .button:hover {
 	background: #7dd1e1;
 	border-bottom: none;
-	color: #fff;
 	text-decoration: none;
 	opacity: 1;
-	box-shadow: inset 0 0 0 200px rgba(85, 85, 85, 0.15);
+	box-shadow: inset 0 0 0 200px rgba(11, 79, 108, 0.15);
 }
 
 .button.small {
@@ -651,7 +653,6 @@ input[type="search"]::-webkit-search-results-button {
 }
 
 .my-button span:after {
-	color: #fff;
 	content: '➞';
 	position: relative;
 	margin-left: 5px;
@@ -1136,11 +1137,23 @@ a[rel~="attachment"]:hover,
 }
 
 .enews-widget h3 {
-	color: #3da1c2;
+	color: #7dd1e1;
 }
 
 .enews-widget p {
 	margin-bottom: 20px;
+}
+
+.enews #subbutton:after {
+	font-family: Ionicons!important;
+	vertical-align: top!important;
+	content: "\f30f"!important;
+	margin-left: 8px!important;
+}
+
+.enews #subbutton:hover:after {
+	margin-left: 12px!important;
+	margin-right: -4px!important;
 }
 
 .enews form + p {
@@ -1838,8 +1851,8 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .entry-content ul li::before {
-	color: #fd7077;
-	content: '\f0da';
+	color: #7dd1e1;
+	content: '\f054';
 	font-family: 'Font Awesome 5 Pro'; 
 	float: left;
 	margin-left: -1em;

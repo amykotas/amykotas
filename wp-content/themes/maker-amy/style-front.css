@@ -133,8 +133,8 @@ h3.front-page-1  {
 
 .front-page-2 article .entry-header a {
 	background: none;
-	color: #fff;
-	font-family: Georgia, serif;
+	color: #fff!important;
+	font-family: "Libre Baskerville", Georgia, serif;
 	letter-spacing: 0.02em;
 	padding: 20px;
 	width: 100%;
