@@ -67,6 +67,7 @@
 
 h1,
 .front-page-1 .widgettitle {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 90px;
 }
 
@@ -172,7 +173,7 @@ h3.front-page-1  {
  * ========================================================================== */
 
 .front-page-4 {
-	background-color: #e98687;
+	background-color: #7dd1e1;
 }
 
 .front-page-4 {
@@ -193,22 +194,24 @@ h3.front-page-1  {
 }
 
 .front-page-4 .featured-testimonial-photo img {
-	border: 2px solid #FADCD9;
+	border: 2px solid #dbf5fa;
 	border-radius: 50%;
 }
 
 .front-page-4 .featured-testimonial-client {
-	color: #FADCD9;
+	color: #dbf5fa;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-style: normal;
 }
 
 .front-page-4 .featured-testimonial-client a {
-	color: #FADCD9;
+	color: #dbf5fa;
 	border-bottom: none;
 }
 
 .front-page-4 .featured-testimonial-client a:hover {
 	background: none;
-	border-bottom: 1px solid #FADCD9;
+	border-bottom: 1px solid #dbf5fa;
 }
 
 /* Front Page 6

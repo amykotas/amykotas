@@ -122,8 +122,8 @@ input[type="search"] {
 
 body {
 	background-color: #fff;
-	color: #555555;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: #222;
+	font-family: "Libre Baskerville", Georgia, serif;
 	font-size: 16px;
 	font-weight: 400;
 	overflow-x: hidden;
@@ -158,10 +158,9 @@ h3,
 h4,
 h5,
 .entry-title {
-	color: #3A798E;
+	color: #7dd1e1;
 	margin: 0 0 1rem;
 	line-height: 1.25em /*1.2*/;
-	font-family: "Libre Baskerville", Georgia, serif;;
 	font-weight: 700;
 }
 
@@ -252,7 +251,7 @@ code,
 pre {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	font-size: 0.8409em;
-	color: #555555;
+	color: #222;
 	border: 1px solid #e1e1e8;
 	background-color: #f7f7f9
 }
@@ -330,16 +329,18 @@ hr,
  * ========================================================================== */
 
 a {
-	border-bottom: 1px solid #DC9F48;
+	border-bottom: 1px solid #7dd1e1;
+	color: #222;
+	font-style: italic;
 	outline: 0;
 	text-decoration: none;
 	transition: all .2s ease-in-out;
 }
 
 a:hover {
-	color: #555555;
-	background: #D7E7E8;
-	border-bottom: 1px solid #D7E7E8;
+	color: #222;
+	background: #d2eff4;
+	border-bottom: 1px solid #d2eff4;
 }
 
 h4 a {
@@ -439,7 +440,7 @@ textarea {
 	background-color: #fff;
 	border-radius: 2px;
 	border: 1px solid #dcdcdc;
-	color: #555555;
+	color: #222;
 	font-size: 0.8409em;
 	padding: 14px 16px;
 	width: 100%;
@@ -534,7 +535,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	font-family: "Open Sans";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
 	background-color: #57e5ae;
 	border-bottom: none;
 	border-radius: 2px;
@@ -559,7 +561,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background: #E46E6F;
+	background: #7dd1e1;
 	border-bottom: none;
 	color: #fff;
 	text-decoration: none;
@@ -574,7 +576,7 @@ input:hover[type="submit"],
 
 .button.light {
 	background: #eee;
-	color: #555555;
+	color: #222;
 }
 
 .bg-primary .button.light,
@@ -1258,7 +1260,7 @@ a[rel~="attachment"]:hover,
 }
 
 .site-title a {
-	color: #555555;
+	color: #222;
 	border: 0;
 	font-style: normal;
 }
@@ -1349,7 +1351,7 @@ only screen and (                min-resolution: 2dppx) {
 	font-style: normal;
 	margin: 0 16px 0;
 	position: relative;
-	color: #555555;
+	color: #222;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: 400;
@@ -1362,14 +1364,14 @@ only screen and (                min-resolution: 2dppx) {
 	background: none;
 	text-decoration: none;
 	opacity: 1;
-	color: #f24850;
+	color: #7dd1e1;
 }
 
 @media only screen and (min-width: 800px) {
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
-		border: 1px solid #11415c;
+		border: 1px solid #7dd1e1;
 		border-radius: 2px;
 		line-height: 1;
 		padding: 10px 20px;
@@ -1378,7 +1380,7 @@ only screen and (                min-resolution: 2dppx) {
 	.genesis-nav-menu .sub-menu {
 		width: 180px;
 		z-index: 99;
-		background: #11415c;
+		background: #7dd1e1;
 		border-radius: 2px;
 		opacity: 0;
 		margin-top: -12px;
@@ -1415,6 +1417,10 @@ only screen and (                min-resolution: 2dppx) {
 		margin: 0;
 		color: #fff;
 		width: 100%;
+	}
+
+	.genesis-nav-menu .sub-menu li a:hover {
+		color: #222;
 	}
 
 	.genesis-nav-menu .sub-menu li {
@@ -1488,7 +1494,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.menu-toggle:before {
 		position: absolute;
-		color: #3A798E;
+		color: #7dd1e1;
 		top: 3px;
 		right: 13px;
 		content: "\f394";
@@ -1513,7 +1519,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.sub-menu-toggle:before {
 		content: "\f123";
-		color: #555555;
+		color: #222;
 		font: normal 16px/1 'ionicons';
 		padding: 14px 5px 14px;
 		cursor: pointer;
@@ -1777,7 +1783,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .entry-title a {
-	color: #555555;
+	color: #222;
 	border: 0;
 	font-style: normal;
 }
@@ -2249,5 +2255,6 @@ p.comment-form-comment {
 }
 
 .site-footer p {
+	font-family: "Libre Baskerville", Georgia, serif;
 	margin-bottom: 0;
 }
