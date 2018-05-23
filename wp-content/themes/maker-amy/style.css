@@ -193,7 +193,6 @@ h6 {
 }
 
 h6,
-.entry-meta,
 .comment-meta {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -253,14 +252,16 @@ blockquote p {
 code,
 pre {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-	font-size: 0.8409em;
+	font-size: 0.85em;
 	color: #222;
 	border: 1px solid #e1e1e8;
-	background-color: #f7f7f9
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 6px;
 }
 
 code {
-	padding: 2px 4px;
+	padding: 0.1em 0.6em;
 	white-space: nowrap;
 }
 
@@ -316,16 +317,67 @@ hr,
 	}
 
 	h1 {
-		font-size: 3.25em;
+		font-size: 2.5em;
 	}
 
 	h2 {
-		font-size: 2.75em;
+		font-size: 2.1em;
 	}
 
 	h3 {
-		font-size: 2em;
+		font-size: 1.76em;
 	}
+}
+
+kbd {
+	padding: 0.1em 0.6em;
+	border: 1px solid #e1e1e8;
+	font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+	font-size: 0.85em;
+	background-color: #f7f7f9;
+	color:#333;
+	-moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	-webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	margin:0 0.1em;
+	text-shadow:0 1px 0 #fff;
+	line-height:1.4;
+	white-space:nowrap;
+}
+
+/* Tooltip code source: https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted #7dd1e1; /* If you want dots under the hoverable text */
+}
+
+mark {
+	background-color: #fecdcf;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #11415C;
+    color: #edf6f8;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+	z-index: 1;
+	top: -5px;
+    left: 105%; 
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 /* Links
@@ -374,13 +426,13 @@ textarea:focus,
  * ========================================================================== */
 
 ::-moz-selection {
-	background-color: #57e5ae;
-	color: #fff;
+	background-color: #edf6f8;
+	color: #222;
 }
 
 ::selection {
-	background-color: #57e5ae;
-	color: #fff;
+	background-color: #edf6f8;
+	color: #222;
 }
 
 
@@ -726,8 +778,10 @@ input[type="search"]::-webkit-search-results-button {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	line-height: 2;
-	margin-bottom: 40px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1em;
+  	font-style: normal;
+	margin: 2em 0;
 	width: 100%;
 }
 
@@ -735,18 +789,30 @@ tbody {
 	border-bottom: 1px solid #ddd;
 }
 
+thead th {
+	font-weight: 700;
+}
+  
 td,
 th {
+	padding: 1rem 1.5rem;
 	text-align: left;
 }
 
 td {
 	border-top: 1px solid #ddd;
-	padding: 6px 0;
+}
+
+td:first-child {
+	padding-left: 0;
 }
 
 th {
 	font-weight: 400;
+}
+
+th:first-child {
+	padding-left: 0;
 }
 
 /* Accessibility
@@ -863,7 +929,8 @@ img.alignright.entry-image {
 	font-size: 1em;
 	font-style: italic;
 	font-weight: 700;
-	text-align: center;
+  	margin-bottom: 1.2rem;
+  	text-align: left;
 }
 
 .entry-content p.wp-caption-text {
@@ -1780,7 +1847,7 @@ only screen and (                min-resolution: 2dppx) {
 .archive .entry-title,
 .page-template-page_blog .entry .entry-title {
 	font-size: 40px;
-  margin-bottom: 1rem;
+  	margin-bottom: 1rem;
 }
 
 .entry-title a {
@@ -1866,6 +1933,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .entry-meta {
 	font-size: 14px;
+	letter-spacing: 0.05em;
 }
 
 /* Author Box

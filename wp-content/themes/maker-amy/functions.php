@@ -29,6 +29,7 @@ function maker_scripts_styles() {
 	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-brands.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-light.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-solid.css', array(), CHILD_THEME_VERSION );
+	
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
 	wp_enqueue_script( 'maker-global', get_stylesheet_directory_uri() . '/js/global.js', array(), CHILD_THEME_VERSION );
 	wp_enqueue_script( 'maker-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array(), CHILD_THEME_VERSION );
@@ -310,3 +311,40 @@ function sp_custom_footer() {
 
 	<?php
 }
+
+// Escape HTML in <code> or <pre><code> tags.
+// Source: https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/
+
+function escapeHTML($arr) {
+
+    if (version_compare(PHP_VERSION, '5.2.3') >= 0) {
+
+        $output = htmlspecialchars($arr[2], ENT_NOQUOTES, get_bloginfo('charset'), false);
+    }
+    else {
+        $specialChars = array(
+            '&' => '&amp;',
+            '<' => '&lt;',
+            '>' => '&gt;'
+        );
+
+        // decode already converted data
+        $data = htmlspecialchars_decode($arr[2]);
+        // escapse all data inside <pre>
+        $output = strtr($data, $specialChars);
+    }
+    if (! empty($output)) {
+        return  $arr[1] . $output . $arr[3];
+    }   else    {
+        return  $arr[1] . $arr[2] . $arr[3];
+    }
+}
+function filterCode($data) { // Uncomment if you want to escape anything within a <pre> tag
+    //$modifiedData = preg_replace_callback('@(<pre.*>)(.*)(<\/pre>)@isU', 'escapeHTML', $data);
+    $modifiedData = preg_replace_callback('@(<code.*>)(.*)(<\/code>)@isU', 'escapeHTML', $data);
+    $modifiedData = preg_replace_callback('@(<tt.*>)(.*)(<\/tt>)@isU', 'escapeHTML', $modifiedData);
+
+    return $modifiedData;
+}
+add_filter( 'content_save_pre', 'filterCode', 9 );
+add_filter( 'excerpt_save_pre', 'filterCode', 9 );
