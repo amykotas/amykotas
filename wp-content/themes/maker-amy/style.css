@@ -140,8 +140,8 @@ ul {
 
 ul.serif-list {
 	font-family: "Libre Baskerville", Georgia, serif;
-	font-size: 25px;
-	margin-bottom: 40px;
+	font-size: 1.25em;
+	margin-bottom: 1.5rem;
 }
 
 ul.serif-list li {
@@ -196,7 +196,7 @@ h6,
 .entry-meta,
 .comment-meta {
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.05em;
 }
 
 p {
@@ -1142,18 +1142,6 @@ a[rel~="attachment"]:hover,
 
 .enews-widget p {
 	margin-bottom: 20px;
-}
-
-.enews #subbutton:after {
-	font-family: Ionicons!important;
-	vertical-align: top!important;
-	content: "\f30f"!important;
-	margin-left: 8px!important;
-}
-
-.enews #subbutton:hover:after {
-	margin-left: 12px!important;
-	margin-right: -4px!important;
 }
 
 .enews form + p {

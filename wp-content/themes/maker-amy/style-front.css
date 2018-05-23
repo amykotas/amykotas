@@ -141,13 +141,8 @@ h3.front-page-1  {
 	display: block;
 }
 
-.front-page-2 article .entry-header a:hover {
-	text-sh
-}
-
 .front-page-2 article img:hover {
 	opacity: 0.8;
-	transition: all 0.5s ease;
 }
 
 .front-page-2 .widget-area {
@@ -186,6 +181,7 @@ h3.front-page-1  {
 
 .front-page-4 .featured-testimonial h2 {
 	color: #fff;
+	font-weight: 500;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -199,7 +195,7 @@ h3.front-page-1  {
 }
 
 .front-page-4 .featured-testimonial-client {
-	color: #dbf5fa;
+	color: #222;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-style: normal;
 }
@@ -211,7 +207,6 @@ h3.front-page-1  {
 
 .front-page-4 .featured-testimonial-client a:hover {
 	background: none;
-	border-bottom: 1px solid #dbf5fa;
 }
 
 /* Front Page 6
