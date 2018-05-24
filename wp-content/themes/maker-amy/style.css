@@ -158,7 +158,7 @@ h3,
 h4,
 h5,
 .entry-title {
-	color: #7dd1e1;
+	color: #2A9FB7;
 	margin: 0 0 1rem;
 	line-height: 1.25em /*1.2*/;
 	font-weight: 700;
@@ -220,7 +220,7 @@ blockquote {
 	/*background-color: #fcf7f8;
 	border-left: 3px solid #fd7077;*/
 	background-color: #edf6f8;
-	border-left: 3px solid #7dd1e1;
+	border-left: 3px solid #2A9FB7;
 	color: #215863;
 	font-family: "Libre Baskerville", Georgia, serif;
 	font-size: 1em;
@@ -353,7 +353,7 @@ kbd {
 .tooltip {
     position: relative;
     display: inline;
-    border-bottom: 1px dotted #7dd1e1; /* If you want dots under the hoverable text */
+    border-bottom: 1px dotted #2A9FB7; /* If you want dots under the hoverable text */
 }
 
 mark {
@@ -384,7 +384,7 @@ mark {
  * ========================================================================== */
 
 a {
-	border-bottom: 1px solid #7dd1e1;
+	border-bottom: 1px solid #2A9FB7;
 	color: #222!important;
 	font-style: italic;
 	outline: 0;
@@ -592,12 +592,11 @@ input[type="submit"],
 .button {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     text-transform: uppercase;
-	background-color: #57e5ae;
+	background-color: #aedce5!important;
 	border-bottom: none;
 	border-radius: 2px;
 	box-shadow: none;
 	border: 0;
-	color: #11415C;
 	cursor: pointer;
 	font-size: 0.8409em;
 	font-weight: 600;
@@ -611,12 +610,17 @@ input[type="submit"],
 	white-space: nowrap;
 }
 
+button a {
+	color: #fff;
+}
+
+
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background: #7dd1e1;
+	background: #aedce5;
 	border-bottom: none;
 	text-decoration: none;
 	opacity: 1;
@@ -1216,6 +1220,10 @@ a[rel~="attachment"]:hover,
 	margin-top: 30px;
 }
 
+.enews #subbutton {
+	height: 50px;
+}
+
 /* Genesis Simple Share */
 
 .content .share-after {
@@ -1432,14 +1440,14 @@ only screen and (                min-resolution: 2dppx) {
 	background: none;
 	text-decoration: none;
 	opacity: 1;
-	color: #7dd1e1;
+	color: #2A9FB7!important;
 }
 
 @media only screen and (min-width: 800px) {
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
-		border: 1px solid #7dd1e1;
+		border: 1px solid #2A9FB7;
 		border-radius: 2px;
 		line-height: 1;
 		padding: 10px 20px;
@@ -1448,7 +1456,7 @@ only screen and (                min-resolution: 2dppx) {
 	.genesis-nav-menu .sub-menu {
 		width: 180px;
 		z-index: 99;
-		background: #7dd1e1;
+		background: #edf6f8;
 		border-radius: 2px;
 		opacity: 0;
 		margin-top: -12px;
@@ -1562,7 +1570,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.menu-toggle:before {
 		position: absolute;
-		color: #7dd1e1;
+		color: #2A9FB7;
 		top: 3px;
 		right: 13px;
 		content: "\f394";
@@ -1906,7 +1914,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .entry-content ul li::before {
-	color: #7dd1e1;
+	color: #2A9FB7;
 	content: '\f054';
 	font-family: 'Font Awesome 5 Pro'; 
 	float: left;
