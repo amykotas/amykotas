@@ -188,7 +188,6 @@ h6 {
 	font-size:  .8409em;
 	font-weight: 400;
 	margin: 0 0 1rem;
-    font-weight: 400;
     line-height: 1.25em;
 }
 
@@ -2147,6 +2146,50 @@ only screen and (                min-resolution: 2dppx) {
 	.genesis-pro-portfolio .content .pro-portfolio:hover:after {
 		opacity: 1;
 	}
+}
+
+/* Testimonials
+ * ========================================================================== */
+
+.testimonial-wrap {
+	padding-top: 3rem;
+} 
+
+.testimonial-photo {
+	position: absolute;
+    transform: translate(-50%,-40%);
+    left: 50%;
+}
+
+.testimonial-photo img {
+	border-radius: 50%;
+}
+
+.testimonial-text {
+	background-color: #edf6f8;
+	color: #215863;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 1em;
+	margin: 0 0 2em 0;
+	padding: 3em 2em 2em 2em;
+}
+
+.testimonial-author {
+	text-align: center;
+}
+
+.testimonial-author p {
+	margin-bottom: 0;
+	color: #2A9FB7;
+	font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.testimonial-author-title {
+	font-size:  .8409em;
+	font-style: italic;
 }
 
 /* Comments
