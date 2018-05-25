@@ -592,7 +592,6 @@ input[type="submit"],
 .button {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     text-transform: uppercase;
-	background-color: #aedce5!important;
 	border-bottom: none;
 	border-radius: 2px;
 	box-shadow: none;
@@ -2016,8 +2015,10 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .genesis-pro-portfolio .content .pro-portfolio a {
-  margin: 0;
+  	margin: 0;
 	display: block;
+	color: #fff!important;
+	background: none;
 	border: 0;
 }
 
