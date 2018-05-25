@@ -217,8 +217,6 @@ strong {
 }
 
 blockquote {
-	/*background-color: #fcf7f8;
-	border-left: 3px solid #fd7077;*/
 	background-color: #edf6f8;
 	border-left: 3px solid #2A9FB7;
 	color: #215863;
@@ -1697,6 +1695,7 @@ only screen and (                min-resolution: 2dppx) {
 .pricing-table > * {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .pricing-table > * {
@@ -1742,6 +1741,10 @@ only screen and (                min-resolution: 2dppx) {
 	list-style: none;
 }
 
+.pricing-table .plan ul li::before {
+	content: ' '
+}
+
 .pricing-table .plan p {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -1758,12 +1761,19 @@ only screen and (                min-resolution: 2dppx) {
 	opacity: .7;
 }
 
-
 .pricing-table .plan.featured {
 	background: #fff;
-	box-shadow: 0 0 0 4px #999999;
+	box-shadow: 0 0 0 4px #7dd1e1;
 	z-index: 2;
 	border-radius: 2px;
+}
+
+.pricing-table .price {
+	font-size: 1.6818em;;
+}
+
+.pricing-table a.button {
+	font-size: 1em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -1793,7 +1803,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.pricing-table .plan.one-third:first-child {
 		margin-left: 0;
-	}
+	}	
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1809,6 +1819,10 @@ only screen and (                min-resolution: 2dppx) {
 
 	.pricing-table .plan.one-fourth:nth-child(3) {
 		margin-left: -2px;
+	}
+
+	.pricing-table .price {
+		font-size: 2.1em;
 	}
 }
 
@@ -2056,8 +2070,16 @@ only screen and (                min-resolution: 2dppx) {
 
 @media only screen and (min-width: 1024px) {
 	.portfolio h1.entry-title {
-		font-size: 50px;
+		font-size: 40px;
 	}
+}
+
+.portfolio h2 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size:  .8409em;
+	font-weight: 400;
+    color: #2A9FB7;
+	letter-spacing: 0.05em;
 }
 
 .genesis-pro-portfolio .content .pro-portfolio .entry-header a {
@@ -2065,6 +2087,15 @@ only screen and (                min-resolution: 2dppx) {
   padding: 20px;
   width: 100%;
   display: block;
+}
+
+.portfolio .portfolio-text {
+	background-color: #edf6f8;
+	color: #215863;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 1em;
+	margin: 0 0 2em 0;
+	padding: 2em 2em 0.5em 2em;
 }
 
 .portfolio img {
