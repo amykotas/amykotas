@@ -24,7 +24,7 @@ define( 'CHILD_THEME_VERSION', '1.0.1' );
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
-	/*wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Karla:400,400i,700|Oswald', array(), CHILD_THEME_VERSION );*/
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Homemade+Apple', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-brands.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'font-awesome', '/fonts/css/fa-light.css', array(), CHILD_THEME_VERSION );

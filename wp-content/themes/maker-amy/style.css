@@ -2165,7 +2165,7 @@ only screen and (                min-resolution: 2dppx) {
 	border-radius: 50%;
 }
 
-.testimonial-text {
+.testimonial {
 	background-color: #edf6f8;
 	color: #215863;
 	font-family: "Libre Baskerville", Georgia, serif;
@@ -2174,14 +2174,17 @@ only screen and (                min-resolution: 2dppx) {
 	padding: 3em 2em 2em 2em;
 }
 
-.testimonial-author {
+.testimonial-author,
+.testimonial-author-title {
+	line-height: inherit;
 	text-align: center;
 }
 
-.testimonial-author p {
-	margin-bottom: 0;
+.testimonial-author {
+	margin-bottom: 0!important;
 	color: #2A9FB7;
 	font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1em;
 	font-weight: 700;
 	letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -2190,6 +2193,14 @@ only screen and (                min-resolution: 2dppx) {
 .testimonial-author-title {
 	font-size:  .8409em;
 	font-style: italic;
+	margin-bottom: 1em!important;
+}
+
+.testimonial-text {
+	color: #222;
+	font-style: normal;
+	font-family: "Libre Baskerville", Georgia, serif;
+	text-transform: inherit;
 }
 
 /* Comments
